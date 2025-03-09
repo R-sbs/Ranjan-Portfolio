@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+  }
+
+@layer components {
+    .btn {
+        @apply  h-11 px-6 rounded-xl border border-red-orange-500 uppercase text-base tracking-wide inline-flex items-center gap-2;
+    }
+
+    .section {
+        @apply py-24 md:py-32 lg:py-40;
+    }
+
+    .slide-arrow {
+        @apply border border-stone-400 size-11 inline-flex items-center justify-center rounded-full hover:bg-red-orange-500 hover:text-white transition-all duration-500;
+    }
+
+    .anim-underline::after {
+        @apply content-[''] w-0 h-px absolute top-full bg-red-orange-500 hover:w-9/12 transition-all duration-500;
+}
+}
+
+.line {
+    @apply overflow-hidden;
+}
+
+.word {
+    @apply translate-y-full leading-tight;
+}
+
+
+  
+
+
