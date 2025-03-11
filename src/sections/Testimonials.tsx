@@ -1,7 +1,6 @@
 "use client";
 import { FC, useRef, useState } from "react";
 import image1 from "@/assets/images/projects/laura-1a.png";
-import image2 from "@/assets/images/testimonials/sachin.jpg";
 import image3 from "@/assets/images/projects/poor-1a.png";
 import image4 from "@/assets/images/testimonials/scout.png";
 
