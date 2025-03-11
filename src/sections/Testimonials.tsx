@@ -19,14 +19,6 @@ const testimonials = [
     imagePositionY: 0.2,
   },
   {
-    name: "Sachin",
-    company: "Sachin Btech Solutions",
-    role: "Founder",
-    quote: "Ranjan transformed our website with a perfect balance of aesthetics and functionality. His ability to optimize performance and create an intuitive UI made a huge difference in user experience.",
-    image: image2,
-    imagePositionY: 0.1,
-  },
-  {
     name: "Darshan Bharadwaj",
     company: "Poorveshana Developers Pvt Ltd",
     role: "Founding Director",
