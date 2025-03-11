@@ -128,7 +128,7 @@ const Footer: FC = () => {
               >
                 Enough Talk, Let's Make Something Great Together
               </h2>
-              <button className="btn lowercase mt-8 group/btn hover:text-stone-200 hover:bg-red-orange-500 transition-all duration-500">
+              <a href="mailto:m2rm.bng@gmail.com" className="btn lowercase mt-8 group/btn hover:text-stone-200 hover:bg-red-orange-500 transition-all duration-500">
                 <span className="text-xl">m2rm.bng@gmail.com</span>
                 <span className="group-hover/btn:rotate-45 transition-all duration-500">
                   <svg
@@ -146,7 +146,7 @@ const Footer: FC = () => {
                     />
                   </svg>
                 </span>
-              </button>
+              </a>
             </div>
             <nav className="flex flex-col  gap-8 mt-16 md:mt-8 md:items-end">
               {navItems.map(({ href, label }) => (
