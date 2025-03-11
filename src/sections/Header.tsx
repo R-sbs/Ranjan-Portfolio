@@ -1,9 +1,7 @@
 "use client";
-import Bars from "@/assets/icons/bars.svg";
 import { FC, useEffect, MouseEvent } from "react";
 import { useState } from "react";
 import { motion, useAnimate } from "motion/react";
-
 
 const navItems = [
   {
@@ -56,20 +54,28 @@ const Header: FC = () => {
       ]);
       navAnimate(navScope.current, { height: 0 }, { duration: 0.7 });
     }
-  }, [open]);
+  }, [
+    open,
+    bottomLineAnimate,
+    bottomLineScope,
+    navAnimate,
+    navScope,
+    topLineAnimate,
+    topLineScope,
+  ]);
 
-  const handleClickMobileNav = ( e: MouseEvent<HTMLAnchorElement> ) => {
-          e.preventDefault();
-          setOpen(false);
+  const handleClickMobileNav = (e: MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    setOpen(false);
 
-          const url = new URL(e.currentTarget.href);
-          const hash = url.hash;
+    const url = new URL(e.currentTarget.href);
+    const hash = url.hash;
 
-          const target = document.querySelector(hash);
+    const target = document.querySelector(hash);
 
-          if(!target) return;
-          target.scrollIntoView({ behavior: "smooth"})
-  }
+    if (!target) return;
+    target.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <header>
@@ -86,7 +92,9 @@ const Header: FC = () => {
               onClick={handleClickMobileNav}
             >
               <div className="container !max-w-screen-lg flex items-center justify-between">
-                <span className="text-3xl md:text-4xl group-hover/nav-item:pl-4  transition-all duration-300">{label}</span>
+                <span className="text-3xl md:text-4xl group-hover/nav-item:pl-4  transition-all duration-300">
+                  {label}
+                </span>
                 <button className="slide-arrow border-transparent group-hover/nav-item:scale-125 transition-all duration-300">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -156,9 +164,9 @@ const Header: FC = () => {
                 </svg>
               </div>
               <a href="#contact">
-              <button className="btn hidden md:block bg-red-orange-500 text-white">
-                Contact me
-              </button>
+                <button className="btn hidden md:block bg-red-orange-500 text-white">
+                  Contact me
+                </button>
               </a>
             </div>
           </div>

@@ -8,7 +8,6 @@ import image4 from "@/assets/images/projects/poor-1.png";
 import image4a from "@/assets/images/projects/poor-1a.png";
 import image5 from "@/assets/images/projects/auction-1.png";
 import image5a from "@/assets/images/projects/auction-1a.png";
-import image5b from "@/assets/images/projects/auction-user-flow.png";
 import Image from "next/image";
 
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */

@@ -46,7 +46,7 @@ export const Testimonial = ({
 
   return (
     <div
-      className="grid md:grid-cols-5 md:gap-6 lg:gap-16 md:items-center"
+      className="grid md:grid-cols-6 md:gap-6 lg:gap-16 md:items-center"
       key={name}
     >
       <div className="relative aspect-square md:aspect-[9/16] md:col-span-2 overflow-hidden">
@@ -54,12 +54,12 @@ export const Testimonial = ({
         <Image
           src={image}
           alt="name"
-          className="size-full object-cover"
-          style={{ objectPosition: `50% ${imagePositionY * 100}%` }}
+          className="size-full object-contain"
+          style={{ objectPosition: `30% ${imagePositionY * 100}%` }}
         />
       </div>
-      <blockquote className="md:col-span-3">
-        <div className="mt-8 text-3xl md:text-5xl lg:text-6xl" ref={quoteScope}>
+      <blockquote className="md:col-span-4">
+        <div className="mt-8 text-3xl md:text-[52px] " ref={quoteScope}>
           &ldquo;
           {quote}
           &rdquo;

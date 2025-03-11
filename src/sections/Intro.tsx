@@ -13,7 +13,7 @@ const Intro: FC = () => {
     if (inView) {
      entranceAnimation()?.then( () => subAnimate())
     }
-  }, [inView]);
+  }, [inView, entranceAnimation, subAnimate]);
   return (
     <section className="section md:mt-16" id="intro" ref={sectionRef}>
       <div className="container">

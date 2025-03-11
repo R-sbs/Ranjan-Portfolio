@@ -126,7 +126,7 @@ const Footer: FC = () => {
                 className="text-4xl md:text-7xl mt-8 font-extralight"
                 ref={scope}
               >
-                Enough Talk, Let's Make Something Great Together
+                Enough Talk, Let&apos;s Make Something Great Together
               </h2>
               <a href="mailto:m2rm.bng@gmail.com" className="btn lowercase mt-8 group/btn hover:text-stone-200 hover:bg-red-orange-500 transition-all duration-500">
                 <span className="text-xl">m2rm.bng@gmail.com</span>

@@ -1,42 +1,49 @@
 "use client";
 import { FC, useRef, useState } from "react";
-import image1 from "@/assets/images/testimonial-1.jpg";
-import image2 from "@/assets/images/testimonial-2.jpg";
-import image3 from "@/assets/images/testimonial-3.jpg";
+import image1 from "@/assets/images/projects/laura-1a.png";
+import image2 from "@/assets/images/testimonials/sachin.jpg";
+import image3 from "@/assets/images/projects/poor-1a.png";
+import image4 from "@/assets/images/testimonials/scout.png";
 
-import { motion,useAnimate, useScroll, useTransform, AnimatePresence } from "motion/react";
+import { motion,useScroll, useTransform, AnimatePresence } from "motion/react";
 import { Testimonial } from "@/components/Testimonial";
 
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 const testimonials = [
   {
-    name: "Sarah Chen",
-    company: "Pixel Perfect",
-    role: "Head of Design",
-    quote:
-      "Alex's expertise in both technical development and design created a beautiful, high-performing website.",
+    name: "Laura",
+    company: "Laura's Touch",
+    role: "Founder",
+    quote: "Ranjan revamped our  website, making it modern, fast, and seamless. His attention to detail and technical expertise ensured a smooth transition without disrupting our live site.",
     image: image1,
     imagePositionY: 0.2,
   },
   {
-    name: "Marcus Rodriguez",
-    company: "Craft Coffee Co.",
+    name: "Sachin",
+    company: "Sachin Btech Solutions",
     role: "Founder",
-    quote:
-      "Alex transformed our boutique coffee brand with a website that perfectly balances aesthetics and functionality.",
+    quote: "Ranjan transformed our website with a perfect balance of aesthetics and functionality. His ability to optimize performance and create an intuitive UI made a huge difference in user experience.",
     image: image2,
     imagePositionY: 0.1,
   },
   {
-    name: "Emily Watson",
-    company: "Studio Minimal",
-    role: "Creative Director",
-    quote:
-      "The collaborative process was amazing. Alex brought lots of fresh perspectives and innovative solutions.",
+    name: "Darshan Bharadwaj",
+    company: "Poorveshana Developers Pvt Ltd",
+    role: "Founding Director",
+    quote: "Ranjan delivered a sleek, high-performing website that boosted client inquiries by 35%. His expertise in modern design, SEO, and speed optimization ensured a seamless user experience.",
     image: image3,
     imagePositionY: 0.55,
   },
+  {
+    name: "Satish",
+    company: "Scout's Gym",
+    role: "Owner",
+    quote: "The system Ranjan built streamlined our gym management, automating emails and WhatsApp alerts. His attention to detail and expertise made membership tracking and feedback collection effortless.",
+    image: image4,
+    imagePositionY: 0.55,
+  },
 ];
+
 
 const Testimonials: FC = () => {
   const htwoRef = useRef(null);
