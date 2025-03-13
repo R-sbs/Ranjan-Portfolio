@@ -102,7 +102,7 @@ const Hero: FC = () => {
                 transition={{ duration: 0.5, delay: 2.2 }}
                 className="relative"
               >
-                <a href="/ranjan_cv.pdf" download="Ranjan_CV.pdf" className="btn border-transparent anim-underline text-xl capitalize">
+                <a href="https://drive.google.com/uc?export=download&id=1PHLDIDcjOGcXcwFSGQLvYSxGS-yNMePj" download className="btn border-transparent anim-underline text-xl capitalize">
                   Download CV{" "}
                   <span className="text-red-orange-500">
                     <svg
