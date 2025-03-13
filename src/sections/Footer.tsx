@@ -128,8 +128,8 @@ const Footer: FC = () => {
               >
                 Enough Talk, Let&apos;s Make Something Great Together
               </h2>
-              <a href="mailto:m2rm.bng@gmail.com" className="btn lowercase mt-8 group/btn hover:text-stone-200 hover:bg-red-orange-500 transition-all duration-500">
-                <span className="text-xl">m2rm.bng@gmail.com</span>
+              <a href="mailto:ranjan.x13@gmail.com" className="btn lowercase mt-8 group/btn hover:text-stone-200 hover:bg-red-orange-500 transition-all duration-500">
+                <span className="text-xl">ranjan.x13@gmail.com</span>
                 <span className="group-hover/btn:rotate-45 transition-all duration-500">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
